@@ -61,7 +61,7 @@ function purchase(answers){
               console.log("-------------------------------------------------".red)
               console.log("Your order has been successfully placed. \n Your total is $ ".blue + ( res[0]['price'] * answers['amount']));
               console.log("-------------------------------------------------".red)
-              console.log("Our quantity in stock after purchase:".red + quantity)
+              console.log("Our quantity in stock after purchase:".red + (quantity - answers['amount']))
               start();
           });
         
